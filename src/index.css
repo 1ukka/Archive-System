@@ -1,0 +1,266 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+  font-family: 'Cairo', sans-serif;
+  
+}
+.container{
+  padding: 20px 60px;
+ 
+}
+
+/* Header */
+.d-flex{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo{
+  width: 150px;
+}
+.ul-header li{ 
+  list-style-type: none ;
+  margin: 0 5px;
+
+}
+.Home-button{
+  text-decoration: none;
+  color: black;
+}
+.father-sign-up{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+ 
+  
+
+}
+
+
+.father-sign-up form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 35%;
+  padding: 40px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+  border-radius: 5px;
+
+
+  
+}
+.father-sign-up form label{
+  padding-bottom: 7px;
+}
+.father-sign-up input{
+  padding: 10px 20px;
+  width: 100%;
+  outline: none;
+  border: 2px white solid;
+  border-radius: 10px;
+  box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.1);
+  transition: 0.3s;
+  margin-bottom: 8px;
+}
+
+.father-sign-up input:focus{
+  border: 2px solid rgba(0,0,0,0.3);
+}
+
+.father-sign-up input::placeholder{
+  color: rgba(0,0,0,0.3);
+}
+
+.father-sign-up button {
+  outline: none;
+  border: none;
+  background-color: #86b7fe;
+  padding: 10px 20px;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  border: 2px solid white;
+  font-weight: bold;
+  width: 20%;
+  margin: auto;
+  text-decoration: none;
+}
+
+.father-sign-up button:hover ,.button-nav:hover {
+  background-color: white;
+  border: 2px solid #86b7fe;
+  color: #86b7fe;
+}
+
+.error{
+  color: red;
+  font-size: 12px;
+  margin-top: 0;
+}
+  /*   */
+/* #usen-input-container{
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+  #user-input{
+    width: 50%;
+    text-align: center;
+  } */
+  #user-input input, #user-input select,#user-input input{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #a0c8cf;
+    border-radius: 4px;
+    box-sizing: border-box;
+
+  }
+  #user-input input:focus,#user-input select:focus{
+    outline: none;
+  }
+
+
+  #user-input input[type=submit]{
+
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  #user-input [type=submit]:hover{
+
+    background-color: #45a049;
+  }
+
+
+  #upload-file input[type=text],   #upload-file select,  #upload-file textarea{
+    width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+
+
+  }
+
+  #upload-file label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+
+  #upload-submit  {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+  }
+
+
+
+  #upload-file input:focus, #upload-file select:focus,#upload-file textarea:focus{
+    outline: none;
+  }
+  
+  #date{
+    margin-left: 10px;
+  }
+  #secret{
+    border-bottom: 1px solid #ccc;
+  }
+  .file-upload-button{
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+  }
+  #upload-delete{
+    background-color: red;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+    margin-right: 10px;
+
+  }  
+ 
+  input[type="file"]::-webkit-file-upload-button {
+    visibility: hidden;
+  }
+  
+  input[type="file"]::before {
+    content: 'اختر الكتاب';  /* Set your custom label text here */
+    display: inline-block;
+    background: #3498db;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
+  input[type="file"]:hover::before {
+    background: #2980b9;
+  }
+  input[type="file"]{
+    color: transparent;
+  }
+  .remove-file-button {
+    background-color: #e74c3c;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    margin-right: 10px;
+  }
+  
+  .remove-file-button:hover {
+    background-color: #c0392b;
+  }
+  
+ /* Styles for the fileReviewer container */
+.fileReviewer {
+  margin-top: 20px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Styles for the iframe displaying the file */
+.fileReviewer iframe {
+  width: 100%;
+  height: 500px;  /* Adjust height as necessary */
+  border: none;  /* Removes default iframe border */
+}
+
+/* Add a label or title for the file reviewer */
+.fileReviewer:before {
+  content: "Preview of the Uploaded File";
+  display: block;
+  padding: 8px;
+  background-color: #f9f9f9;
+  border-bottom: 1px solid #ccc;
+  color: #333;
+  font-size: 16px;
+  font-weight: bold;
+}
